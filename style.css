@@ -1,0 +1,118 @@
+body {
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+p {
+    margin: 0px;
+}
+
+button, #colour-picker {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.header-section, .footer-section {
+    display: flex;
+    justify-content: center;
+}
+
+.modifiers-section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-body-section {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.control-board {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+/* brush section */
+
+.brush-section {
+background-color: lightblue;
+margin-bottom: 15px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+
+#brush-para {
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+#brush-btn {
+    background-color: green;
+}
+
+/* eraser section */
+.eraser-section {
+    margin-bottom: 15px;
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#erase-para {
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+/* grid section */
+.grid-controller-section {
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#grid-size-para {
+    align-self: center;
+}
+
+#toggle-gridlines-checkbox {
+    transform: scale(1.25);
+}
+
+/* canvas section*/
+
+.canvas-board {
+    border: 3px solid black;
+    width: 750px;
+    height: 750px;
+    margin: auto;
+    /* minimum margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    border: none;
+    display: flex;
+    flex: 1;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    border: none;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer="true"> </script>
+</head>
+
+<body>
+
+    <div class="header-section">The Odin Project: Etch A Sketch</div>
+
+    <div class="main-body-section">
+
+        <div class="control-board">
+            <div class="brush-section">
+                <p id="brush-para">Modify Brush</p>
+                <div class="modifiers-section">
+                    <input type="color" name="colour-picker" id="colour-picker" value="#252151">
+                    <button id="brush-btn">brush</button>
+                    <button id="rgb-btn"> RGB</button>
+                    <button id="shader-btn">shader</button>
+                    <button id="bucket-btn">bucket</button>
+
+                </div>
+            </div>
+
+            <div class="eraser-section">
+                <p id="erase-para">Erase</p>
+                <div class="modifiers-section">
+                    <button id="eraser-btn">Eraser</button>
+                    <button id="clear-all-btn">clear all</button>
+                </div>
+            </div>
+
+            <div class="grid-controller-section">
+                <p id="grid-size-para">
+                    Grid Size: <span id="grid-size-output"> </span>
+                </p>
+                <div class="modifiers-section">
+                    <input type="range" name="grid-size" id="grid-size" min="1" max="72" step="1" value="16">
+                    <label for="colour-picker-checkbox">Toggle Gridlines</label>
+                    <input type="checkbox" name="toggle-gridlines-checkbox" id="toggle-gridlines-checkbox">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="canvas-board">
+            <!--insert gridlines based on user input-->
+        </div>
+
+    </div>
+
+    <div class="footer-section">
+        Copyright &#169 NotCosmos <!-- add github icon between--> 2024
+    </div>
+
+
+</body>
+
+</html>
